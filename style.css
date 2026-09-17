@@ -1,0 +1,238 @@
+css * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  background: #f2f3f5;
+  color: #333;
+}
+
+.app {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+/* 所持金 */
+
+.money-box {
+  text-align: center;
+  padding: 20px;
+  background: #f7f7f7;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.money-box p {
+  margin: 0 0 8px;
+  color: #777;
+}
+
+#money {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+/* 収入・支出ボタン */
+
+.button-area {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.button-area button {
+  flex: 1;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.income-button {
+  background: #dff5e5;
+  color: #198754;
+}
+
+.expense-button {
+  background: #ffe2e2;
+  color: #dc3545;
+}
+
+.button-area button:hover {
+  opacity: 0.8;
+}
+
+/* 入力フォーム */
+
+.form-area {
+  display: none;
+  padding: 18px;
+  background: #f5f5f5;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.form-area h2 {
+  margin-top: 0;
+}
+
+.form-area label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.form-area input,
+.form-area select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.form-buttons button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#addButton {
+  background: #333;
+  color: white;
+}
+
+#cancelButton {
+  background: #ddd;
+}
+
+/* 今月の収支 */
+
+.summary {
+  padding: 18px;
+  background: #f7f7f7;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.summary h2 {
+  margin-top: 0;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0;
+}
+
+.balance {
+  font-size: 18px;
+}
+
+/* カテゴリ別支出 */
+
+.category-box {
+  padding: 18px;
+  background: #f7f7f7;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.category-box h2 {
+  margin-top: 0;
+}
+
+.category-item {
+  margin-bottom: 15px;
+}
+
+.category-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.bar-background {
+  width: 100%;
+  height: 14px;
+  background: #e5e5e5;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%;
+  border-radius: 10px;
+  background: #333;
+  transition: width 0.4s;
+}
+
+/* 履歴 */
+
+.history-box {
+  margin-top: 10px;
+}
+
+.history-box h2 {
+  margin-bottom: 12px;
+}
+
+.history-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px;
+  margin-bottom: 10px;
+  background: #f7f7f7;
+  border-radius: 10px;
+}
+
+.history-left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.history-name {
+  font-weight: bold;
+}
+
+.history-info {
+  font-size: 12px;
+  color: #888;
+}
+
+.income {
+  color: #198754;
+  font-weight: bold;
+}
+
+.expense {
+  color: #dc3545;
+  font-weight: bold;
+}
